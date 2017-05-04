@@ -21,5 +21,10 @@ pipeline {
         echo 'Realizando Deploy'
       }
     }
-  }  
+    stage('Maven') {
+      steps {
+        sh 'sh \'mvn --version\''
+      }
+    }
+  }
 }
