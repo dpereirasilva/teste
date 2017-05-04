@@ -6,7 +6,7 @@ pipeline {
         echo 'Rafael é Feio'
       }
     }
-    stage('error') {
+    stage('Deploy') {
       steps {
         echo 'Teste'
       }
