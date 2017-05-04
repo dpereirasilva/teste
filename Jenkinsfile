@@ -9,7 +9,7 @@ pipeline {
     }
     stage('') {
       steps {
-        bat(script: 'Etapa De Bode', returnStatus: true, returnStdout: true)
+        bat 'bat echo "Bode"'
       }
     }
   }
