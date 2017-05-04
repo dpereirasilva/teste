@@ -3,13 +3,12 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        bat 'echo "Fail!"; exit 1'
         echo 'Rafael é Feio'
       }
     }
     stage('') {
       steps {
-        bat 'bat echo "Bode"'
+        echo 'Teste'
       }
     }
   }
