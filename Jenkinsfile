@@ -3,7 +3,16 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        echo 'Rafael é Feio'
+        parallel(
+          "Test": {
+            echo 'Rafael é Feio'
+            
+          },
+          "Teste 2": {
+            echo 'Diego'
+            
+          }
+        )
       }
     }
     stage('Deploy') {
