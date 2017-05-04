@@ -4,7 +4,12 @@ pipeline {
     stage('Test') {
       steps {
         bat 'echo "Fail!"; exit 1'
-        echo 'Rafael é Feio'
+        echo 'Rafael Ã© Feio'
+      }
+    }
+    stage('') {
+      steps {
+        bat(script: 'Etapa De Bode', returnStatus: true, returnStdout: true)
       }
     }
   }
