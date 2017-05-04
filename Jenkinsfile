@@ -1,23 +1,24 @@
 pipeline {
   agent any
   stages {
-    stage('Test') {
+    stage('Build') {
       steps {
-        parallel(
-          "Test": {
-            echo 'Rafael Ã© Feio'
-            
-          },
-          "Teste 2": {
-            echo 'Diego'
-            
-          }
-        )
+        echo 'Bui dando...kkkkk'
       }
     }
-    stage('Deploy') {
+    stage('Teste') {
       steps {
-        echo 'Teste'
+        echo 'Testando...'
+      }
+    }
+    stage('Qualidade do Código') {
+      steps {
+        echo 'Verificando a Qualidade do Codigo....'
+      }
+    }
+    stage('Deploy MGMT') {
+      steps {
+        echo 'Realizando Deploy'
       }
     }
   }
